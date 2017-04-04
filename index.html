@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8"/>
+		<title>muuzvi.com - free online mp3 converter for Facebook</title>
+
+		<!-- Google web fonts -->
+		<link href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700" rel='stylesheet' />
+
+		<!-- The main CSS file -->
+		<link href="assets/css/style.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<div id="header"><div id="login">
+		<div class="fb-login-button" data-max-rows="1" data-size="medium" data-show-faces="false" data-auto-logout-link="true" scope="publish_actions"></div>
+		</div></div>
+		<div id="title"><a href="/"><img src="/assets/img/muuzvi_logo.png"></a></div>
+		<div id="sub_title">Your mp3 on Facebook</div>
+		<form id="upload" method="post" action="upload.php" enctype="multipart/form-data">
+			<div id="drop">
+			<div id="drop_text">Drop SOUND here</div>
+			<div id="or">or</div>
+			<a><img id="upl_ico" src="/assets/img/snd_ico.png">Click to upload</a>
+			<input type="file" name="upl" id="upl" multiple />
+			<div id="desc">MP3, WMA or WAV</div>
+			<div id="template">Use templates</div>
+			</div>
+
+			<ul>
+				<!-- The file uploads will be shown here -->
+			</ul>
+
+		</form>
+
+	        
+		<!-- JavaScript Includes -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="assets/js/jquery.knob.js"></script>
+
+		<!-- jQuery File Upload Dependencies -->
+		<script src="assets/js/jquery.ui.widget.js"></script>
+		<script src="assets/js/jquery.iframe-transport.js"></script>
+		<script src="assets/js/jquery.fileupload.js"></script>
+		
+		<!-- Our main JS file -->
+		<script src="assets/js/script.js"></script>
+
+
+	</body>
+</html>
